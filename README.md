@@ -1,19 +1,28 @@
-Description: 
-I have been using cosmic os and got tired of weird work arounds for unity to fix itself, this script should fix a lot of problems (Not all of them).
+Unity COSMIC OS Fix — Editor Utility for Linux
+A Unity Editor script that resolves common UI refresh issues when running Unity on Linux with the COSMIC desktop environment.
+Problems This Fixes
 
-Target Audience:
-1: If you use Unity on Linux, have cosmic os installed
-   A: Inspector is not updating to selected object or file
-   B: Hierarchy having a similar issue not updating
-
-If I have theh motivation, I will update this to counter any other issues. 
-
-Side Note: 
-Terrible at how github works, if you can post issues somewhere on here and i manage to see them, I will attempt to fix them. 
+Inspector panel not updating when selecting a different object or asset
+Hierarchy panel not reflecting changes or selection state correctly
 
 
-Installation: 
-1: Create a folder in assets named "Editor" 
-2: Download then place the cs script into the folder called "Editor"
-3: Produce games
+More fixes may be added over time as issues are discovered.
 
+Installation
+
+In your Unity project, create a folder at Assets/Editor/ (if it doesn't already exist)
+Download the .cs script from this repository
+Place it inside Assets/Editor/
+That's it — Unity will pick it up automatically as an Editor script
+
+Requirements
+
+Unity (any recent LTS version should work)
+Linux with COSMIC DE
+
+Known Limitations
+This script does not fix every Unity-on-Linux issue — only the specific panel refresh problems listed above. If you run into something else, see below.
+Reporting Issues
+Not super familiar with GitHub's issue tracker yet, but feel free to open an Issue on this repo and I'll do my best to look into it and push a fix when I can.
+Contributing
+PRs are welcome if you've found a fix for something else Unity breaks on COSMIC. The more the merrier.
